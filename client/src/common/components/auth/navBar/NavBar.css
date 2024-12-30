@@ -1,0 +1,131 @@
+.about,
+.services,
+.contact,
+.home,
+.landie {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+}
+.landie {
+  width: 30%;
+  line-height: 38px;
+  font-weight: 900;
+  color: inherit;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.about,
+.services,
+.contact,
+.home {
+  line-height: 24px;
+}
+.home,
+.about,
+.services,
+.contact {
+  color: inherit;
+  width: auto;
+}
+
+.homeAboutContactMenu {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+.homeAboutContactMenuWrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-lg);
+  color: var(--color-steelblue);
+}
+
+.auth-buttons {
+  display: flex;
+  width: 30%;
+  justify-content: end;
+  margin: auto;
+  gap: 1rem;
+}
+.active {
+  font-weight: bold;
+  color: var(--color-goldenrod-300);
+}
+
+
+.connexion,
+.inscription {
+  width: 90px;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--corner-large);
+  cursor: pointer;
+}
+
+.translation_btn {
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer; 
+  padding: 10px; 
+}
+
+.translation_btn .globe-icon {
+  color: var(--color-goldenrod-300); 
+  font-size: 24px;
+}
+
+.connexion {
+  background-color: var(--colour-main-blue-800);
+  color: var(--colour-secondary-white-100-general);
+}
+
+.inscription {
+  background-color: var(--color-goldenrod-100);
+  color: var(--colour-main-blue-800);
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin: 30px 260px 20px 260px;
+  align-self: stretch;
+  border-radius: var(--br-base);
+  background-color: var(--color-whitesmoke-100);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-2xl) var(--padding-8xl) var(--padding-2xl)
+  var(--padding-7xl);
+  position:static;
+  z-index: 99;
+  gap: var(--gap-xl);
+  text-align: center;
+  min-width: 1380px;
+  font-size: var(--font-size-6xl);
+  color: var(--colour-main-blue-800);
+  font-family: Poppins , sans-serif;
+}
+
+
+
+

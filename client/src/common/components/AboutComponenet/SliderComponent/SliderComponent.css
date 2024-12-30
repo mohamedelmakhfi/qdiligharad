@@ -1,0 +1,55 @@
+.slider-container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .slider-container h2 {
+    text-align: center;
+    color: #d4a700;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+  
+  .slider-item {
+    max-width: 240px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+    margin: auto auto 10px auto;
+    box-shadow: 0 1px 4px rgba(38, 88, 226, 0.3);
+
+  }
+  .partenaire-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .partenaire-logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
+  
+  .slider-item h3, .slider-item p {
+    color: #1a0341;
+    padding: 5px;
+    margin: 10px 0;
+  }
+  
+  .view-tutorial-button {
+    background-color: #d4a700;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .view-tutorial-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  

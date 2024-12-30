@@ -1,0 +1,42 @@
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.feature-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 330px; 
+  height: 230px; 
+  box-shadow: 0 4px 8px rgba(38, 88, 226, 0.3);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #666;
+}

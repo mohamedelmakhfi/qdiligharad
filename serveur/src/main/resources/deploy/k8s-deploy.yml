@@ -1,0 +1,67 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: socle-api
+  namespace: gu-dev
+data:
+  SPRING_DATASOURCE_DRIVER: oracle.jdbc.driver.OracleDriver
+  SPRING_DATASOURCE_PASSWORD: portnet09
+  SPRING_DATASOURCE_URL: 'jdbc:oracle:thin:@10.40.128.21:1521:GUDBPRPN1'
+  SPRING_DATASOURCE_USERNAME: portnet
+  SPRING_HIBERNATE_DIALECT: org.hibernate.dialect.Oracle10gDialect
+
+---------------------------------------
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: socle-api
+  namespace: gu-shared
+  labels:
+    app: socle-api
+    type: backend
+spec:
+  spec:
+    containers:
+      - name: ged-api
+        image: 'harbor.portnet.dc/socle-gu/ged-api:1.0.0'
+        ports:
+          - containerPort: 8080
+            protocol: TCP
+        envFrom:
+          - configMapRef:
+              name: socle-api
+        imagePullPolicy: Always
+--------------------------------------
+kind: Service
+apiVersion: v1
+metadata:
+  name: socle-api
+  namespace: gu-dev
+  labels:
+    app: socle-api
+    type: backend
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: socle-api
+  type: ClusterIP
+
+----------------------------------
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: module
+  namespace: gu-dev
+spec:
+  rules:
+    - host: socle-dev.portnet.ma
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              serviceName: socle-api
+              servicePort: 8080

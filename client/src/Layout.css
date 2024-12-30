@@ -1,0 +1,21 @@
+.mainlayout_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #FDFDFE;
+  font-family: "Poppins", sans-serif;
+}
+
+.sideleft_main {
+  width: 20%;
+  height: 98%;
+  margin: 20px;
+}
+
+.mainlayout_ {
+  width: 100%;
+  height: 98%;
+  margin: 20px;
+}

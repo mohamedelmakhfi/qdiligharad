@@ -1,0 +1,321 @@
+/* .search {
+    --background: #ffffff;
+    --text-color: #414856;
+    --primary-color: #4F29F0;
+    --border-radius: 10px;
+    --width: 400px;    
+    --height: 55px;      
+    background: var(--background);
+    width: auto;
+    height: var(--height);
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(#414856, .05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search input[type="text"] {
+    position: relative;
+    width: var(--height);
+    height: var(--height);
+    font: 400 16px 'Varela Round', sans-serif;
+    color: var(--text-color);
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0 0 0 40px;
+    transition: width .6s ease;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .search input[type="text"]:focus {
+    z-index: 0;
+    opacity: 1;
+    width: var(--width);
+  }
+  
+  .search input[type="text"]:focus ~ .symbol::before {
+    width: 0%;
+  }
+  
+  .search input[type="text"]:focus ~ .symbol::after {
+    clip-path: inset(0% 0% 0% 100%);
+    transition: clip-path .04s linear .105s;
+  }
+  
+  .search input[type="text"]:focus ~ .symbol .cloud {
+    top: -30px;
+    left: -30px;
+    transform: translate(0, 0);
+    transition: all .6s ease;
+  }
+  
+  .search input[type="text"]:focus ~ .symbol .lens {
+    top: 20px;
+    left: 15px;
+    transform: translate(0, 0);
+    fill: var(--colour-main-blue-800);
+    transition: top .5s ease .1s, left .5s ease .1s, fill .3s ease;
+  }
+  
+  .symbol {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .symbol::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colour-main-blue-800);
+    z-index: -1;
+    transition: width .6s ease;
+  }
+  
+  .symbol::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--colour-main-blue-800);
+    z-index: 1;
+    clip-path: inset(0% 0% 0% 0%);
+    transition: clip-path .04s linear .225s;
+  }
+  
+  .symbol .cloud,
+  .symbol .lens {
+    position: absolute;
+    fill: #fff;
+    stroke: none;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .symbol .cloud {
+    width: 35px;
+    height: 32px;
+    transform: translate(-50%, -60%);
+    transition: all .6s ease;
+  }
+  
+  .symbol .lens {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    top: 24px;
+    left: 24px;
+    transition: top .3s ease, left .3s ease, fill .2s ease .2s;
+  }
+  
+  .search-bar {
+    background-color: #D9D9D9;
+    width: 1380px;
+    height: 8vh;
+    font: 400 16px 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+ */
+
+
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-whitesmoke-100);
+    width: 1380px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 30px;
+    font: 400 16px 'Varela Round', sans-serif;
+  }
+  
+  
+  .buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+  }
+  
+  .icon-button {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    color: #414856;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font: 400 16px 'Varela Round', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+  }
+  
+  .icon-button .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    
+  }
+
+  .icon-button:hover{
+    background-color: var(--colour-main-blue-800);
+    color: #E8EBF3;
+    fill: #E8EBF3;
+  }
+
+  .icon-button.active{
+    background-color: var(--colour-main-blue-800);
+  color: #e8ebf3;
+  fill: #e8ebf3;
+  }
+  
+  .search {
+    --background: #ffffff;
+    --text-color: #414856;
+    --border-radius: 10px;
+    --width: 190px;    
+    --height: 55px;      
+    background: var(--background);
+    width: auto;
+    height: var(--height);
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(#414856, .05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search input[type="text"] {
+    position: relative;
+    width: var(--height);
+    height: var(--height);
+    font: 400 16px 'Varela Round', sans-serif;
+    color: var(--text-color);
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0 0 0 40px;
+    transition: width .6s ease;
+    z-index: 10;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .search input[type="text"]:focus {
+    z-index: 0;
+    opacity: 1;
+    width: var(--width);
+  }
+  
+  .search input[type="text"]:focus ~ .symbol::before {
+    width: 0%;
+  }
+  
+  .search input[type="text"]:focus ~ .symbol::after {
+    clip-path: inset(0% 0% 0% 100%);
+    transition: clip-path .04s linear .105s;
+  }
+  
+  .search input[type="text"]:focus ~ .symbol .cloud {
+    top: -30px;
+    left: -30px;
+    transform: translate(0, 0);
+    transition: all .6s ease;
+  }
+  
+  .search input[type="text"]:focus ~ .symbol .lens {
+    top: 20px;
+    left: 15px;
+    transform: translate(0, 0);
+    fill: var(--colour-main-blue-800);
+    transition: top .5s ease .1s, left .5s ease .1s, fill .3s ease;
+  }
+  
+  .symbol {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .symbol::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colour-main-blue-800);
+    z-index: -1;
+    transition: width .6s ease;
+  }
+  
+  .symbol::after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--colour-main-blue-800);
+    z-index: 1;
+    clip-path: inset(0% 0% 0% 0%);
+    transition: clip-path .04s linear .225s;
+  }
+  
+  .symbol .cloud,
+  .symbol .lens {
+    position: absolute;
+    fill: #fff;
+    stroke: none;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .symbol .cloud {
+    width: 35px;
+    height: 32px;
+    transform: translate(-50%, -60%);
+    transition: all .6s ease;
+  }
+  
+  .symbol .lens {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+    z-index: 2;
+    top: 24px;
+    left: 24px;
+    transition: top .3s ease, left .3s ease, fill .2s ease .2s;
+  }
+  

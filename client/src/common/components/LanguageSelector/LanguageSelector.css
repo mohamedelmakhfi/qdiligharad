@@ -1,0 +1,45 @@
+.translation_btn {
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px; 
+  }
+  
+  .translation_btn .globe-icon {
+    color: var(--color-goldenrod-300); 
+    font-size: 24px;
+  }
+  
+  .translation-container {
+    position: relative;
+  }
+  
+  .language-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-whitesmoke-100);
+    border: 1px solid var(--color-goldenrod-300);
+    border-radius: var(--corner-large);
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .language-option {
+    padding: 5px 10px; 
+    cursor: pointer;
+    background-color: var(--color-whitesmoke-100);
+    color: var(--colour-main-blue-800);
+    transition: background-color 0.3s;
+    font-size: 14px;
+  }
+  
+  .language-option:hover {
+    background-color: var(--color-goldenrod-100);
+  }
+  
+  .language-option:focus {
+    outline: none;
+  }
+  
+  

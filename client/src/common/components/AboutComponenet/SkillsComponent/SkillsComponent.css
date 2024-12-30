@@ -1,0 +1,100 @@
+.skills_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+
+}
+
+.skills-container {
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  padding: 100px;
+  background-color: #f9f9f9;
+  z-index: 3;
+
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  width: 40%;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 60%;
+  
+}
+
+.skills-box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 50px 30px 50px;
+  margin: 10px;
+  width: 40%;
+  text-align: center;
+  border-radius: 22px;
+  transition: transform 0.3s;
+
+}
+
+
+.skills-box:hover {
+  transform: translateY(-10px);
+}
+
+
+.skills-box.highlight {
+    background: #DAA11F;
+  }
+  
+
+
+.skills-box h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+
+.skills-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Align text to the left for better readability */
+  }
+  
+  .skills-box ul li {
+    margin: 5px 0;
+    color: #072441; /* Darker color for better readability */
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: 500; /* Medium weight to match the example */
+  }
+.skills-image {
+  max-width: 20%;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colour-main-blue-800);
+  border-radius: 15%;
+}
+
+.skills-image img {
+    padding-top:20px ;
+    max-width: 70%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

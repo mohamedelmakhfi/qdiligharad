@@ -1,0 +1,8 @@
+.gradient-bar {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0px;
+    background: linear-gradient(90deg, #D69500 0%, #7C5E20 46%, #111B47 100%);
+    border-radius: 10px;
+  }
+  

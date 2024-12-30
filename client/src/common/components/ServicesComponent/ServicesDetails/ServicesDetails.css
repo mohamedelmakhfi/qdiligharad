@@ -1,0 +1,34 @@
+
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin-top: 50px;
+
+}
+
+.ServicesDetails {
+    font-family: Poppins , sans-serif;
+    background-color: var(--color-whitesmoke-100);
+    display: flex;
+    min-width: 1380px;
+    justify-content: center;
+    border-radius: 55px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  .separator {
+    border: 0;
+    height: 8px;
+    width: 50%;
+  }
+  
+  .separator.yellow {
+    background-color: #DAA11F;
+  }
+  
+  .separator.blue {
+    background-color: #111B47;
+  }

@@ -1,0 +1,47 @@
+.ad-section {
+    background-color: #d49a00;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .ad-title {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .slider-track {
+    display: flex;
+    width: calc(250px * 40); 
+    animation: scroll 40s linear infinite;
+  }
+  
+  .slide {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 10));
+    }
+  }
+  

@@ -1,0 +1,67 @@
+{
+  "name": "xarikati.ma",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.16.5",
+    "@mui/x-data-grid": "^6.18.5",
+    "@mui/x-data-grid-generator": "^6.18.5",
+    "@mui/x-date-pickers": "^7.11.1",
+    "@react-pdf/renderer": "^3.4.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.2",
+    "cuid": "^3.0.0",
+    "date-fns": "^2.30.0",
+    "i18next": "^23.12.2",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "pdfjs-dist": "^4.4.168",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^15.0.0",
+    "react-pdf": "^9.1.0",
+    "react-router-dom": "^6.6.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11",
+    "zustand": "^4.5.2"
+  },
+  "scripts": {
+    "start": "set PORT=3001 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "rules": {
+    "no-undef": "off"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}

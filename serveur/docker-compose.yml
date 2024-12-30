@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql
+    container_name: qdiligharad-dev-db
+    environment:
+      MYSQL_ROOT_PASSWORD: medelma123@
+      MYSQL_DATABASE: qdiligharad
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./src/main/resources/scripts/scripts.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  mysql-data:

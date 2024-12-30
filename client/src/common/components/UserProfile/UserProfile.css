@@ -1,0 +1,94 @@
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .profile-info p {
+    margin: 5px 0 0;
+    color: #666;
+  }
+  
+  .edit-button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .form-Group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .form-Group:last-child {
+    margin-right: 0;
+  }
+  
+  .form-Group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-Group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .input-icon {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input-icon span {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .input-icon input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  

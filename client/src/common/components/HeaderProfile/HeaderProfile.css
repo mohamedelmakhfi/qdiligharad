@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .greeting h1 {
+    margin: 0;
+    font-size: 24px;
+    color:var(--colour-main-blue-250);
+  }
+  
+  .greeting span {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .search-notification {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-notification input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the input field */
+  }
+  
+  .notification-icon {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .profile-picture {
+    margin-left: 20px;
+  }
+  
+  .profile-picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

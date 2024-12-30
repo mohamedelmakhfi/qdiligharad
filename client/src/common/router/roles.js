@@ -1,0 +1,2 @@
+export const ROLE_MEAD = "ROLE_VUPORTUARIA_MEAD";
+export const ROLE_ADMIN = "ROLE_VUPORTUARIA_ADMIN";

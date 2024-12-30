@@ -1,0 +1,78 @@
+.how-it-works-container {
+    text-align: center;
+    font-family: Poppins , sans-serif;
+    margin-top: 130px;
+    margin-bottom: 50px;
+  }
+  
+  .title {
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    padding: 24px; /* Increased padding */
+    font-size: 2rem; /* Increased font size */
+    width: auto;
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px; /* Increased gap between columns */
+  }
+  
+  .steps-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0f0f0;
+    margin: 20px 0; /* Increased margin */
+    padding: 30px; /* Increased padding */
+    border-radius: 20px;
+    width: 500px; /* Increased width */
+  }
+  
+  .step-number {
+    background-color: #fbbf24;
+    color: white;
+    border-radius: 50%;
+    width: 40px; /* Increased size */
+    height: 40px; /* Increased size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; /* Increased margin */
+  }
+  
+  .step-text {
+    width: 70%; /* Adjusted width */
+  }
+  
+  .step-text h3 {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    font-size: 18px; /* Increased font size */
+  }
+  
+  .step-text p {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    font-size: 16px; /* Increased font size */
+    font-weight: bold;
+  }
+  
+  .steps-divider {
+    width: 4px;
+    background-color: #fbbf24;
+    height: 200px; /* Increased height */
+    margin: 0 30px; /* Increased margin */
+  }
+  
